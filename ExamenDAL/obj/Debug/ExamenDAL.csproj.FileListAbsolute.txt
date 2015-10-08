@@ -1,0 +1,14 @@
+C:\Users\CDIS\Desktop\Abraham Barcenas\Examen\ExamenDAL\bin\Debug\ExamenDAL.dll.config
+C:\Users\CDIS\Desktop\Abraham Barcenas\Examen\ExamenDAL\bin\Debug\ExamenDAL.dll
+C:\Users\CDIS\Desktop\Abraham Barcenas\Examen\ExamenDAL\bin\Debug\ExamenDAL.pdb
+C:\Users\CDIS\Desktop\Abraham Barcenas\Examen\ExamenDAL\obj\Debug\ExamenDAL.dll
+C:\Users\CDIS\Desktop\Abraham Barcenas\Examen\ExamenDAL\obj\Debug\ExamenDAL.pdb
+C:\Users\CDIS\Desktop\Abraham Barcenas\Examen\ExamenDAL\obj\Debug\ExamenDAL.csprojResolveAssemblyReference.cache
+C:\Users\hgx95\Desktop\IHC PROYECTO SM\Examen\ExamenDAL\obj\Debug\ExamenDAL.csprojResolveAssemblyReference.cache
+C:\Users\hgx95\Desktop\IHC PROYECTO SM\Examen\ExamenDAL\obj\Debug\ExamenDAL.dll
+C:\Users\hgx95\Desktop\IHC PROYECTO SM\Examen\ExamenDAL\obj\Debug\ExamenDAL.pdb
+C:\Users\hgx95\Desktop\IHC PROYECTO SM\Examen\ExamenDAL\bin\Debug\ExamenDAL.dll.config
+C:\Users\hgx95\Desktop\IHC PROYECTO SM\Examen\ExamenDAL\bin\Debug\ExamenDAL.dll
+C:\Users\hgx95\Desktop\IHC PROYECTO SM\Examen\ExamenDAL\bin\Debug\ExamenDAL.pdb
+C:\Users\hgx95\Desktop\IHC PROYECTO SM\Examen\ExamenDAL\bin\Debug\EntityFramework.dll
+C:\Users\hgx95\Desktop\IHC PROYECTO SM\Examen\ExamenDAL\bin\Debug\EntityFramework.xml

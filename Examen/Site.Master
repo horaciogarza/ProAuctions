@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Examen.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="App_Themes/Theme1/Site.css" rel="stylesheet" type="text/css" />  <%--hoja de estilo del site--%>
+    <link href="App_Themes/Theme2/Estilo2.css" rel="stylesheet" type="text/css" />
+
+     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css"/>
+     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="/resources/demos/style.css"/>
+
+    <script src="/Scripts/chosen.jquery.js" type="text/javascript"></script>
+    <link href="App_Themes/Theme1/chosen.css" rel="stylesheet" type="text/css" />
+    <link href="App_Themes/Theme2/chosen.css" rel="stylesheet" type="text/css" />
+
+
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    Bienvenido: <asp:Label runat="server" ID="lblTitulo"></asp:Label>
+                </h1>
+            </div>
+            <div class="loginDisplay">
+                 <asp:LinkButton ID="lnkLogout" runat="server" onclick="lnkLogout_Click">Cerrar Sesion</asp:LinkButton>
+            </div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Subastas/Subasta_s.aspx" Text="Subastas">
+                            <asp:MenuItem NavigateUrl="~/Subastas/Subasta_i.aspx" Text="Agregar"/>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="About"/>
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>

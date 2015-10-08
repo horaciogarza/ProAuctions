@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="amaCDISModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="amaCDISModelStoreContainer">
+    <EntitySet Name="Auction" EntityType="amaCDISModel.Store.Auction" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="AuctionRecord" EntityType="amaCDISModel.Store.AuctionRecord" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="User" EntityType="amaCDISModel.Store.User" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Auction_User" Association="amaCDISModel.Store.FK_Auction_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Auction" EntitySet="Auction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Auction_User1" Association="amaCDISModel.Store.FK_Auction_User1">
+      <End Role="User" EntitySet="User" />
+      <End Role="Auction" EntitySet="Auction" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AuctionRecord_Auction" Association="amaCDISModel.Store.FK_AuctionRecord_Auction">
+      <End Role="Auction" EntitySet="Auction" />
+      <End Role="AuctionRecord" EntitySet="AuctionRecord" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AuctionRecord_User" Association="amaCDISModel.Store.FK_AuctionRecord_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="AuctionRecord" EntitySet="AuctionRecord" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Auction">
+    <Key>
+      <PropertyRef Name="AuctionId" />
+    </Key>
+    <Property Name="AuctionId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ProductName" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Description" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="StartDate" Type="datetime" Nullable="false" />
+    <Property Name="EndDate" Type="datetime" Nullable="false" />
+    <Property Name="HighestBid" Type="decimal" Precision="9" Scale="2" />
+    <Property Name="Winner" Type="int" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AuctionRecord">
+    <Key>
+      <PropertyRef Name="RecordId" />
+    </Key>
+    <Property Name="RecordId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AuctionId" Type="int" Nullable="false" />
+    <Property Name="UserId" Type="int" Nullable="false" />
+    <Property Name="Amount" Type="decimal" Nullable="false" Precision="9" Scale="2" />
+    <Property Name="BidDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Password" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Email" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_Auction_User">
+    <End Role="User" Type="amaCDISModel.Store.User" Multiplicity="0..1" />
+    <End Role="Auction" Type="amaCDISModel.Store.Auction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Auction">
+        <PropertyRef Name="Winner" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Auction_User1">
+    <End Role="User" Type="amaCDISModel.Store.User" Multiplicity="1" />
+    <End Role="Auction" Type="amaCDISModel.Store.Auction" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Auction">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AuctionRecord_Auction">
+    <End Role="Auction" Type="amaCDISModel.Store.Auction" Multiplicity="1" />
+    <End Role="AuctionRecord" Type="amaCDISModel.Store.AuctionRecord" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Auction">
+        <PropertyRef Name="AuctionId" />
+      </Principal>
+      <Dependent Role="AuctionRecord">
+        <PropertyRef Name="AuctionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AuctionRecord_User">
+    <End Role="User" Type="amaCDISModel.Store.User" Multiplicity="1" />
+    <End Role="AuctionRecord" Type="amaCDISModel.Store.AuctionRecord" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="AuctionRecord">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
