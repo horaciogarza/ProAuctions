@@ -19,3 +19,15 @@ C:\Users\hgx95\Desktop\IHC PROYECTO SM\Examen\Examen\obj\Debug\Examen.dll
 C:\Users\hgx95\Desktop\IHC PROYECTO SM\Examen\Examen\obj\Debug\Examen.pdb
 C:\Users\hgx95\Desktop\IHC PROYECTO SM\Examen\Examen\bin\EntityFramework.dll
 C:\Users\hgx95\Desktop\IHC PROYECTO SM\Examen\Examen\bin\EntityFramework.xml
+C:\Users\hgx95\Desktop\IHCPROJECT\Examen\Examen\bin\Examen.dll.config
+C:\Users\hgx95\Desktop\IHCPROJECT\Examen\Examen\bin\Examen.dll
+C:\Users\hgx95\Desktop\IHCPROJECT\Examen\Examen\bin\Examen.pdb
+C:\Users\hgx95\Desktop\IHCPROJECT\Examen\Examen\bin\ExamenBLL.dll
+C:\Users\hgx95\Desktop\IHCPROJECT\Examen\Examen\bin\ExamenDAL.dll
+C:\Users\hgx95\Desktop\IHCPROJECT\Examen\Examen\bin\EntityFramework.dll
+C:\Users\hgx95\Desktop\IHCPROJECT\Examen\Examen\bin\ExamenBLL.pdb
+C:\Users\hgx95\Desktop\IHCPROJECT\Examen\Examen\bin\ExamenDAL.pdb
+C:\Users\hgx95\Desktop\IHCPROJECT\Examen\Examen\bin\EntityFramework.xml
+C:\Users\hgx95\Desktop\IHCPROJECT\Examen\Examen\obj\Debug\Examen.csprojResolveAssemblyReference.cache
+C:\Users\hgx95\Desktop\IHCPROJECT\Examen\Examen\obj\Debug\Examen.dll
+C:\Users\hgx95\Desktop\IHCPROJECT\Examen\Examen\obj\Debug\Examen.pdb

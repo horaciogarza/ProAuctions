@@ -1,5 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterLogin.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Examen.Login" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
+
+    <link href="App_Themes/Theme1/bootstrap.css" rel="stylesheet" type="text/css" />
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -22,7 +25,7 @@
     </tr>
 </table>
     <asp:Button ID="btnIngresar" runat="server" Text="Ingresar" 
-        onclick="btnIngresar_Click"/>
+        onclick="btnIngresar_Click" class="btn btn-default"/>
 
 
     <br />
@@ -31,7 +34,7 @@
 
     <asp:Label ID="lblRegistro" runat="server" Text="No estas registrado?, Registrate aqui"></asp:Label>
     &nbsp;
-    <asp:Button ID="btnRegistro" runat="server" Text="Registrate" Height="19px" 
-        Width="75px" onclick="btnRegistro_Click" />
+    <asp:Button ID="btnRegistro" runat="server" Text="Registrate" 
+        onclick="btnRegistro_Click" class="btn btn-default"/>
 
 </asp:Content>
